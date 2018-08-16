@@ -45,7 +45,7 @@ function viewCart() {
         str += '.';
       }
     }
-  }
+  } return str;
 }
 
 function total() {
