@@ -59,7 +59,7 @@ function viewCart (){
              for(var list in cart[i]){
              myString+=`${list} at $${cart[i][list]}`
                  if(i!==cart.length-1){
-                   myString+=", "
+                   myString+=", and "
                  }
                  else{
                    myString+="."
