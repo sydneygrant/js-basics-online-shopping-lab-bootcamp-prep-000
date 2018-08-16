@@ -35,10 +35,15 @@ function viewCart() {
   if (cart.length == 0){
     return "Your shopping cart is empty.";
   } else if (cart.length == 1){
-    str += `${cart[0]} at ${cart[0][0]}`
+    str += `${cart[0].key} at ${cart[0].value}.`;
+  } else if (cart.length == 2){
+    str += `${cart[0].key} at ${cart[0].value}, and ${cart[1].key} at ${cart[1].value}.`;
   } else {
     for (var i = 0; i < cart.length; i++){
-      
+      str += `${cart[i].key} at ${cart[i].value}, and`;
+      if (i == cart.length){
+        str += '.';
+      }
     }
   }
 }
