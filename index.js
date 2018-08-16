@@ -41,7 +41,7 @@ function viewCart() {
   } else {
     for (var i = 0; i < cart.length; i++){
       str += `${cart[i].key} at ${cart[i].value}, and`;
-      if (i == cart.length){
+      if (i == cart.length-1){
         str += '.';
       }
     }
